@@ -6,6 +6,7 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState(0);
   const dispatch = useDispatch();
+
   const addContact = (event) => {
     event.preventDefault();
     dispatch({
