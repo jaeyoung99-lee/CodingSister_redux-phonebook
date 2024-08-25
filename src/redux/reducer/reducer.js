@@ -1,5 +1,6 @@
 const initialState = {
   contactList: [],
+  searchName: "",
 };
 
 function reducer(state = initialState, { type, payload }) {
@@ -15,6 +16,8 @@ function reducer(state = initialState, { type, payload }) {
           },
         ],
       };
+    case "SEARCH_NAME":
+      return { ...state, searchName: payload.searchName };
     default:
       return { ...state };
   }
