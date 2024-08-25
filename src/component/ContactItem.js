@@ -8,6 +8,7 @@ const ContactItem = ({ item }) => {
         <img
           width={50}
           src="https://static.vecteezy.com/system/resources/previews/036/167/121/non_2x/ai-generated-intelligent-process-automation-monochrome-line-logo-user-centric-business-value-cute-baby-robot-simple-icon-design-element-ai-art-for-corporate-branding-vector.jpg"
+          alt="default_user"
         />
       </Col>
       <Col lg={11}>
