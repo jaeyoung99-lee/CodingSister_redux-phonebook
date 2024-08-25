@@ -1,11 +1,5 @@
 const initialState = {};
 
-export default (state = initialState, { type, payload }) => {
-  switch (type) {
-    case first:
-      return { ...state, ...payload };
+function reducer(state = initialState, action) {}
 
-    default:
-      return state;
-  }
-};
+export default reducer;
