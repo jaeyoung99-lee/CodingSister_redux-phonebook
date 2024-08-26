@@ -16,6 +16,19 @@ const ContactList = () => {
 
   return (
     <div>
+      <div>
+        {searchName === "" ? (
+          <p>
+            총 연락처 수 :{" "}
+            <span style={{ color: "red" }}>{filterContactList.length}</span>명
+          </p>
+        ) : (
+          <p>
+            검색된 연락처 수 :{" "}
+            <span style={{ color: "red" }}>{filterContactList.length}</span>명
+          </p>
+        )}
+      </div>
       <SearchBox />
       {filterContactList.map((item, index) => (
         <ContactItem key={index} item={item} />
